@@ -112,7 +112,6 @@ class OperationSystem(metaclass=ABCMeta):
     def get_gst_repo_libs(self):
         pass
 
-
 class Debian(OperationSystem):
     def get_required_exec(self) -> list:
         return ['git', 'yasm', 'nasm', 'gcc', 'g++', 'make', 'ninja-build', 'python3-pip', 'python3-dev', 'cargo']
